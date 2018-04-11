@@ -1,3 +1,32 @@
+@import "./_variables";
+
 body {
-  background-color: red;
+ background-color: yellow;
+ font-family: arial;
+}
+
+ul{
+  margin: 20px 0px;
+  padding: 0px;
+  li {
+    $height: 40px;
+    background-color: grey;
+    height: $height;
+    width: 300px;
+    position: relative;
+    line-height: $height;
+    font-size: 25px;
+    box-sizing: border-box;
+    color: $text-color;
+    list-style-type: none;
+    margin-bottom: 5px;
+    padding: 0px 10px;
+    button {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      width: $height;
+      height: $height;
+    }
+}
 }

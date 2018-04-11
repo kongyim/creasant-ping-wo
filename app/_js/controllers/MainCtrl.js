@@ -1,11 +1,26 @@
 exports = module.exports = ()=> {
 
   class MainCtrl {
-    firstName = "John";
-    lastName = "Doe";
+    name = "Ka Ming"
+    nameList = [
+      {
+        name: "Gilbert"
+      },
+      {
+        name: "Kong"
+      }
+    ]
 
     constructor() {
 
+    }
+
+    add(name) {
+      this.nameList.push({name: name})
+    }
+
+    remove(index) {
+      this.nameList.splice(index, 1)
     }
   }
 

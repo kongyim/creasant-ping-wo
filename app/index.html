@@ -4,6 +4,12 @@
     <link rel="stylesheet" href="./styles/main.css" />
   </header>
   <body ng-app="app" ng-controller="mainCtrl as ctrl">
-    {{ctrl.firstName}}, {{ctrl.lastName}}
+    <input ng-model="ctrl.name" /> Hello, {{ctrl.name}} <button ng-click="ctrl.add(ctrl.name)">add</button>
+    <ul>
+      <li ng-repeat="item in ctrl.nameList">
+        {{$index+1}}. {{item.name}}
+        <button ng-click="ctrl.remove($index)">x</button>
+      </li>
+    </ul>
   </body>
 </html>

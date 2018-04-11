@@ -5,7 +5,7 @@
 1. vscode - Visual Studio Code by Microsoft, a free text editor [https://code.visualstudio.com/]
 1. gulp - tools to help you managing tasks, define your own task and automate it
 1. scss - precompiled css, you can have nested structure, variables, mixin (something like function), for loop ... ...
-1. angular - Angular JS by Google, we're using versy old version 1.6.x, Javascript framework
+1. angular - [Angular JS by Google](https://www.w3schools.com/angular/default.asp), we're using versy old version 1.6.x, Javascript framework
 
 ### Setup development environment
 1. install git [ https://nodejs.org/ ]

@@ -1,10 +1,11 @@
 ## What you need to know before using it
 1. git - version control
-1. nodejs 
+1. nodejs
 1. npm - node package manager, you can use npm command after installing nodejs
 1. vscode - Visual Studio Code by Microsoft, a free text editor [https://code.visualstudio.com/]
 1. gulp - tools to help you managing tasks, define your own task and automate it
-1. scss - precompiled css, you can have nested structure, variables, mixin (something like function), for loop ... ... 
+1. scss - precompiled css, you can have nested structure, variables, mixin (something like function), for loop ... ...
+1. angular - Angular JS by Google, we're using versy old version 1.6.x, Javascript framework
 
 ### Setup development environment
 1. install git [ https://nodejs.org/ ]
@@ -21,7 +22,7 @@ npm install -g
 ```
 git clone git@github.com:kongyim/creasant-ping-wo.git
 cd creasant-ping-wo
-npm install 
+npm install
 ```
 
 ### Start development server

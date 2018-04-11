@@ -54,13 +54,21 @@ gulp.task("server", (done)=>{
 });
 
 gulp.task("styles", ()=>{
-  return gulp.src("./app/_scss/main.scss").pipe(scss()).on("error", scss.logError).pipe(gulp.dest("./app/styles/")).pipe(cleanCSS()).pipe(rename({
-    extname: ".min.css"
-  })).pipe(gulp.dest("./app/styles/"));
+  return gulp.src("./app/_scss/main.scss")
+    .pipe(scss()).on("error", scss.logError)
+    .pipe(gulp.dest("./app/styles/"))
+    .pipe(cleanCSS())
+    .pipe(rename({
+      extname: ".min.css"
+    }))
+    .pipe(gulp.dest("./app/styles/"));
 });
 
 gulpBundle = function() {
-  return bundler.bundle().on("error", displayError).pipe(source("bundle.js")).pipe(gulp.dest("./app/scripts")).pipe(livereload());
+  return bundler.bundle().on("error", displayError)
+    .pipe(source("bundle.js"))
+    .pipe(gulp.dest("./app/scripts"))
+    .pipe(livereload());
 };
 
 gulp.task("browserify", ()=>{
@@ -93,11 +101,15 @@ gulp.task("watch", ()=>{
 });
 
 gulp.task("reloadcss", ()=>{
-  return gulp.src("./app/styles/main.css").pipe(livereload()).on("error", displayError);
+  return gulp.src("./app/styles/main.css")
+    .pipe(livereload())
+    .on("error", displayError);
 });
 
 gulp.task("reloadHtml", ()=>{
-  return gulp.src("./app/**/*.html").pipe(livereload()).on("error", displayError);
+  return gulp.src("./app/**/*.html")
+    .pipe(livereload())
+    .on("error", displayError);
 });
 
 gulp.task("release", ()=>{
